@@ -1,0 +1,8 @@
+arancino, diviso in due parti, microcontrollore (con funzionamento simile a un arduino) e microprocessore (simile a raspberry)
+
+ajenti, sistema opensource per plugin installato su raspberry (non ufficiale ma funziona quindi top), ha già qualche base ma si deve completare
+
+
+
+studio docs, vedo i plugin già fatti da loro, che hanno una parte di backend in python e frontend in angularJs. La parte di business logic è in parte python in parte APIs preesistenti (REST) (Arancino interface). Plugin per configurare wifi, la rete Lora (?), plugin per configurare delle variabili di configurazione del sistema.
+tutti i plugin hanno un Continuos Integration, quando modifico metto i tag. La devo integrare nel progetto, però si deve abilitare la pipeline (che faranno loro, glielo devo dire quando succede

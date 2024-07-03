@@ -1,0 +1,32 @@
+name: arancino_admin_panel_microcontroller_manager
+author: Maurizio Saccà
+email: mauriziosacc4@gmail.com
+url: http://example.com
+version: '0.1'
+title: 'arancino_admin_panel_microcontroller_manager'
+icon: question
+# dependency on Core is required for UI plugins
+dependencies:
+    - !PluginDependency {
+        plugin_name: core
+    }
+    # - !OptionalPluginDependency {
+    #   plugin_name: my_other_plugin
+    # }
+    # - !ModuleDependency {
+    #   module_name: requests
+    # }
+    # - !BinaryDependency {
+    #   binary_name: curl
+    # }
+resources:
+    - 'resources/js/module.js'
+    - 'resources/js/routing.js'
+    - 'resources/js/controllers/index.controller.js'
+    - 'resources/partial/index.html'
+    - 'ng:example.arancino_admin_panel_microcontroller_manager'
+    # - 'ng:my.plugin.angular-submodule'
+    # - 'resources/module.js'
+    # - 'resources/module.coffee'
+    # - 'resources/styles.css'
+    # - 'resources/styles.less'

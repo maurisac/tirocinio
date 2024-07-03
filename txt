@@ -6,3 +6,33 @@ ajenti, sistema opensource per plugin installato su raspberry (non ufficiale ma 
 
 studio docs, vedo i plugin già fatti da loro, che hanno una parte di backend in python e frontend in angularJs. La parte di business logic è in parte python in parte APIs preesistenti (REST) (Arancino interface). Plugin per configurare wifi, la rete Lora (?), plugin per configurare delle variabili di configurazione del sistema.
 tutti i plugin hanno un Continuos Integration, quando modifico metto i tag. La devo integrare nel progetto, però si deve abilitare la pipeline (che faranno loro, glielo devo dire quando succede
+
+
+
+03/07 - riunione
+
+incongruenze con le immagini di docker.
+
+reboot della centralina no perhé è già implementato
+
+reset del microcontrollore - simulo la pressione del reset sulla scheda 
+bootloader mode - modalità in cui si può caricare un FW
+caricamento firmware
+
+
+devo installare qualcos'altro perché non ho il loro stesso pannello
+
+per il fw sicuramente c'è un API 
+nodered script su filesystem
+
+reset e boot mode
+
+
+plugin microcontrollore generico, con sezioni divise ognuna con il plugin che devo implementare (i 3 sopra). form per caricare il fw
+
+per il reset e bootloader mode dovrebbero esistere già degli script, uso python per richiamarli
+
+il file upload richiama una API rest (passo endpoint e payload con un'API)
+
+
+userò la pipeline per le dipendenze e per installare, mi devo collegare all'arancino di test

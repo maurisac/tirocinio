@@ -36,3 +36,9 @@ il file upload richiama una API rest (passo endpoint e payload con un'API)
 
 
 userò la pipeline per le dipendenze e per installare, mi devo collegare all'arancino di test
+
+
+
+per cambiare la porta /etc/ajenti/config.json o yaml
+
+comando per veddere se il reset funziona screen /dev/ttyACM0 115200

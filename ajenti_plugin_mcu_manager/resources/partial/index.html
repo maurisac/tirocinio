@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<h1>{{my_title}}</h1>
+
+    <div>
+        <h2 translate>Manage Microcontroller</h2>
+
+        <a class="btn btn-primary" ng-click="reset()">
+            Reset Microcontroller
+        </a>
+        <hr>
+        <a class="btn btn-primary" ng-click="blmode()">
+            Bootloader mode
+        </a>
+        <hr>
+        <a class="btn btn-primary" ng-click="prova()">
+            Prova
+        </a>
+
+        <input type="file" class="file-input" style="display: none" (change)="onFileSelected($event)" #fileUpload>
+
+        <div class="file-upload">
+
+        {{fileName || "No file uploaded yet."}}
+
+            <button mat-mini-fab color="primary" class="upload-btn"
+            (click)="fileUpload.click()">
+                <mat-icon>attach_file</mat-icon>
+            </button>
+        </div>

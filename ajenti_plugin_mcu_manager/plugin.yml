@@ -1,0 +1,32 @@
+name: ajenti_plugin_mcu_manager
+author: Maurizio Saccà
+email: mauriziosacc4@gmail.com
+url: http://example.com
+version: '0.1'
+title: 'ajenti_plugin_mcu_manager'
+icon: microchip
+# dependency on Core is required for UI plugins
+dependencies:
+    - !PluginDependency {
+        plugin_name: core
+    }
+    # - !OptionalPluginDependency {
+    #   plugin_name: my_other_plugin
+    # }
+    # - !ModuleDependency {
+    #   module_name: requests
+    # }
+    # - !BinaryDependency {
+    #   binary_name: curl
+    # }
+resources:
+    - 'resources/js/module.js'
+    - 'resources/js/routing.js'
+    - 'resources/js/controllers/index.controller.js'
+    - 'resources/partial/index.html'
+    - 'ng:ajenti_plugin_mcu_manager'
+    # - 'ng:my.plugin.angular-submodule'
+    # - 'resources/module.js'
+    # - 'resources/module.coffee'
+    # - 'resources/styles.css'
+    # - 'resources/styles.less'

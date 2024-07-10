@@ -13,9 +13,9 @@ dependencies:
     # - !OptionalPluginDependency {
     #   plugin_name: my_other_plugin
     # }
-    # - !ModuleDependency {
-    #   module_name: requests
-    # }
+    - !ModuleDependency {
+      module_name: subprocess
+    }
     # - !BinaryDependency {
     #   binary_name: curl
     # }

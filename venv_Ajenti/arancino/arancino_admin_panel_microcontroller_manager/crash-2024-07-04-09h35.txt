@@ -1,0 +1,30 @@
+Ajenti bug report
+--------------------
+
+
+Info | Value
+----- | -----
+Ajenti | 2.2.10
+Platform | debian / ubuntu / Ubuntu 22.04.4 LTS
+Architecture | x86_64
+Python | 3.10.12
+Debug | True
+Loaded plugins | 
+
+Library | Version
+------- | -------
+gevent | 23.9.1
+greenlet | 23.9.1
+psutil | 5.9.0
+
+
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/aj/entry.py", line 39, in start
+        aj.core.run(dev_mode=dev_mode, **kwargs)
+      File "/usr/local/lib/python3.10/dist-packages/aj/core.py", line 108, in run
+        aj.config.load()
+      File "/usr/local/bin/ajenti-panel", line 37, in load
+        self.data = yaml.load(open(self.path), Loader=yaml.Loader)
+    PermissionError: [Errno 13] Permission denied: '/etc/ajenti/config.yml'
+
+            

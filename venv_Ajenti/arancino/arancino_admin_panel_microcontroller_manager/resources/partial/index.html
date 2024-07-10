@@ -7,7 +7,15 @@
         Click ({{counter}})
     </a>
     <hr />
-    <h2 translate>Generate content with Python binding</h2>
-    <p class="alert alert-info">{{python_get}}</p>
-    <p class="alert alert-info">{{python_post}}</p>
+    <h2 translate>Manage Microcontroller</h2>
+    <!-- <p class="alert alert-info">{{python_get}}</p>
+    <p class="alert alert-info">{{python_post}}</p> -->
+    <a class="btn btn-primary" ng:click="reset()">
+        Reset Microcontroller
+    </a>
+    <hr>
+    <a class="btn btn-primary" ng:click="blmode()">
+        Bootloader mode
+    </a>
+
 </div>

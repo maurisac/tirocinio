@@ -48,3 +48,11 @@ http://192.168.159.67:8001 è l'indirizzo in cui di solito c'è la dashboard.
 
 
 Guida tra i preferiti per il ng file upload (chatgpt non ha aiutato molto in quanto il plugin non veniva avviato)
+
+
+per caricare il file utilizzo un altro controller, dove ho la logica. per implementare correttamente questo controller, mi ispiro da questo: https://stackoverflow.com/questions/17354568/routing-in-angularjs-for-multiple-controllers
+creo quindi una directive (non so dove, penso faccio una cartella apposita) per controller e li inserisco nel file html. 
+
+una volta che ho il controller dedicato, lo sviluppo assieme all'html per avere una logica di upload funzionante, dove c'è il filtraggio sulle estensioni e il blocco sul numero di file caricabili.
+
+Successivamente il file andrà caricato nel mcu? devo chiedere
